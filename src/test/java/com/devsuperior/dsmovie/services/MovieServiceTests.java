@@ -44,7 +44,7 @@ public class MovieServiceTests {
 	@BeforeEach
 	void setUp() throws Exception {
 		movie = MovieFactory.createMovieEntity();
-		movieDTO = new MovieDTO(movie);
+		movieDTO = MovieFactory.createMovieDTO();
 		page = new PageImpl<>(List.of(movie));
 		movieTitle = movie.getTitle();
 		existingMovieId = 1L;
